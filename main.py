@@ -25,7 +25,7 @@ p = 10
 for i in range(10):
     canvas.create_line(p, 10, p, 190, fill="green", width=3)
     canvas.create_line(10, p, 190, p, fill="red", width=3)
-    p += 20
+    p = p + 20
 
 # запускаем главный цикл приложения
 root.mainloop()
