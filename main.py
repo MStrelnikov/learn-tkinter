@@ -20,8 +20,12 @@ canvas = tk.Canvas(root, width=500, height=500,bg="white")
 canvas.pack()
 
 
-# создаем графические объекты
-# ....
+# создаем горизонтальные и вертикальные линии с шагом 20 пикселей
+p = 10
+for i in range(10):
+    canvas.create_line(p, 10, p, 190, fill="green", width=3)
+    canvas.create_line(10, p, 190, p, fill="red", width=3)
+    p += 20
 
 # запускаем главный цикл приложения
 root.mainloop()
